@@ -1,3 +1,5 @@
+package main;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -20,6 +22,7 @@ public class Day1 {
         } catch (FileNotFoundException exception) {
             System.out.println("File not found");
             System.out.println(exception.getMessage());
+            System.exit(-1);
         }
 
         calculateDifference(keys, values);
